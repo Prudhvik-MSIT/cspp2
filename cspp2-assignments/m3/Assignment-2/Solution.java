@@ -28,12 +28,15 @@ public final class Solution {
      *
      * @return     no. of 7s
      */
+    
+    static final int SEVEN = 7;
+
     static int noOf7s(int n) {
         int count = 0;
         for (int i = 0; i <= n; i++) {
             int temp = i;
             while (temp != 0) {
-                if (temp%10 == 7) count++;
+                if (temp%10 == SEVEN) count++;
                 temp = temp/10;
             }
         }
