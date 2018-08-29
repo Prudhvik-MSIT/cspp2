@@ -21,9 +21,11 @@ public final class Solution {
         // empty constructor
     }
 
-
+    /**
+     * constant value SEVEN
+     */
     static final int SEVEN = 7;
-    
+
     /**
      * returns no. of 7s in the numbers below n
      *
