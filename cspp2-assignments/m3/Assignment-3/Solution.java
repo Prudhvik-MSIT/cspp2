@@ -20,6 +20,7 @@ public final class Solution {
     private Solution() {
         // empty constructor
     }
+
     /**
      * constant ONE.
      */
