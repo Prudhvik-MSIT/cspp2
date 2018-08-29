@@ -21,12 +21,12 @@ public final class Solution {
         // empty constructor
     }
     /**
-     * constant ONE
+     * constant ONE.
      */
     static final int ONE = 1;
 
     /**
-     * computes and returns GCD of a and b
+     * computes and returns GCD of a and b.
      *
      * @param      a     first argument
      * @param      b     second argument
@@ -35,23 +35,28 @@ public final class Solution {
      */
     static int gcd(final int a, final int b) {
         int min = 0;
-        if(a < b) {
+        if (a < b) {
             min = a;
         } else {
             min = b;
         }
 
         for (int i = min; i > 1; i--) {
-            if(a % i == 0 && b % i == 0) {
+            if (a % i == 0 && b % i == 0) {
                 return i;
             }
         }
         return ONE;
     }
 
+    /**
+     * main function.
+     *
+     * @param      args  command line arguments
+     */
     public static void main(final String[] args) {
 
-        Scanner s = new Scanner(System.in);      
+        Scanner s = new Scanner(System.in);
         int n1 = s.nextInt();
         int n2 = s.nextInt();
         System.out.println(gcd(n1, n2));
