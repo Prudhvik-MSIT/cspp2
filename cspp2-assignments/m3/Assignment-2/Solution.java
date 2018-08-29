@@ -33,7 +33,7 @@ public class Solution {
     	for (int i=0; i<=n; i++) {
     		int temp = i;
     		while (temp != 0) {
-    			if (count%10 == 7) count++;
+    			if (temp%10 == 7) count++;
     			temp = temp/10;
     		}
     	}
