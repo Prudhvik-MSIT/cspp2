@@ -18,7 +18,7 @@ public class Solution {
      * Constructs the object.
      */
     private Solution() {
-    	// empty constructor
+        // empty constructor
     }
 
     /**
@@ -29,15 +29,15 @@ public class Solution {
      * @return     no. of 7s
      */
     static int noOf7s(int n) {
-    	int count = 0;
-    	for (int i=0; i<=n; i++) {
-    		int temp = i;
-    		while (temp != 0) {
-    			if (temp%10 == 7) count++;
-    			temp = temp/10;
-    		}
-    	}
-    	return count;
+        int count = 0;
+        for (int i=0; i<=n; i++) {
+            int temp = i;
+            while (temp != 0) {
+                if (temp%10 == 7) count++;
+                temp = temp/10;
+            }
+        }
+        return count;
     }
 
     /**
@@ -50,7 +50,7 @@ public class Solution {
         Scanner s = new Scanner(System.in);      
         int n = s.nextInt();
         
-		System.out.println(noOf7s(n));
+        System.out.println(noOf7s(n));
         
     }
 }
