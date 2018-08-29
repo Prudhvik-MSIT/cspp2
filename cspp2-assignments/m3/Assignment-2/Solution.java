@@ -25,6 +25,7 @@ public final class Solution {
      * constant value SEVEN
      */
     static final int SEVEN = 7;
+    static final int TEN = 10;
 
     /**
      * returns no. of 7s in the numbers below n
@@ -38,8 +39,8 @@ public final class Solution {
         for (int i = 0; i <= n; i++) {
             int temp = i;
             while (temp != 0) {
-                if (temp%10 == SEVEN) count++;
-                temp = temp/10;
+                if (temp % TEN == SEVEN) count++;
+                temp = temp / TEN;
             }
         }
         return count;
@@ -50,7 +51,7 @@ public final class Solution {
      *
      * @param      args  command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
 
         Scanner s = new Scanner(System.in);
         int n = s.nextInt();
