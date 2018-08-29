@@ -11,9 +11,9 @@ Do not modify this main function.
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
 /* Fill the main function to print the number of 7's between 1 to n*/
-    
+
     /**
      * Constructs the object.
      */
@@ -30,7 +30,7 @@ public class Solution {
      */
     static int noOf7s(int n) {
         int count = 0;
-        for (int i=0; i<=n; i++) {
+        for (int i = 0; i <= n; i++) {
             int temp = i;
             while (temp != 0) {
                 if (temp%10 == 7) count++;
@@ -47,10 +47,10 @@ public class Solution {
      */
     public static void main(String[] args) {
 
-        Scanner s = new Scanner(System.in);      
+        Scanner s = new Scanner(System.in);
         int n = s.nextInt();
-        
+
         System.out.println(noOf7s(n));
-        
+
     }
 }
