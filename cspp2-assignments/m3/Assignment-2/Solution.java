@@ -39,7 +39,7 @@ public final class Solution {
      */
     static int noOf7s(final int n) {
         int count = 0;
-        for (int i = 0; i <= n; i++) {
+        for (int i = 1; i <= n; i++) {
             int temp = i;
             while (temp != 0) {
                 if (temp % TEN == SEVEN) {
