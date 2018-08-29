@@ -21,6 +21,9 @@ public final class Solution {
         // empty constructor
     }
 
+
+    static final int SEVEN = 7;
+    
     /**
      * returns no. of 7s in the numbers below n
      *
@@ -28,9 +31,6 @@ public final class Solution {
      *
      * @return     no. of 7s
      */
-    
-    static final int SEVEN = 7;
-
     static int noOf7s(int n) {
         int count = 0;
         for (int i = 0; i <= n; i++) {
