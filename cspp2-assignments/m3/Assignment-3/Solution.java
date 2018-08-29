@@ -34,9 +34,9 @@ public final class Solution {
      * @return     gcd of a and b
      */
     static int gcd(final int a, final int b) {
-        int min = a < b ? a : b;
+        // int min = a < b ? a : b;
 
-        for (int i = min; i > 1; i--) {
+        for (int i = a < b ? a : b; i > 1; i--) {
             if (a % i == 0 && b % i == 0) {
                 return i;
             }
