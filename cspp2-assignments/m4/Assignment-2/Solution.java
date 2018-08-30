@@ -4,12 +4,12 @@
  * Module 4 - Assignment 2
  */
 
-import java.util.*;
+import java.util.Scanner;
 
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
 
     /**
      * Constructs the object.
@@ -24,7 +24,7 @@ public class Solution {
      *
      * @param      args  command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
 
         Scanner input = new Scanner(System.in);
 
