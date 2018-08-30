@@ -48,6 +48,18 @@ public class Solution {
             input.nextLine();
         }
         
+        for (int i = 0; i < r; i++) {
+            for (int j = 0; j < c; j++) {
+                System.out.print(m1[i][j] + " ");
+            } System.out.println("");
+        }
+
+        for (int i = 0; i < r; i++) {
+            for (int j = 0; j < c; j++) {
+                System.out.print(m2[i][j] + " ");
+            } System.out.println("");
+        }
+
         int[][] m = new int[r][c];
         for (int i = 0; i < r; i++) {
             for (int j = 0; j < c; j++) {
