@@ -11,7 +11,7 @@ import java.util.Scanner;
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
 
     /**
      * Constructs the object.
@@ -20,6 +20,8 @@ public class Solution {
         // empty constructor
     }
 
+    static char ZERO = '0';
+
     /**
      * to convert from binary to decimal.
      *
@@ -27,10 +29,10 @@ public class Solution {
      *
      * @return     the decimal equivalent
      */
-    static String binaryToDecimal(String s) {
+    static String binaryToDecimal(final String s) {
         long sum = 0, pow = 1;
         for (int i = s.length() - 1; i >= 0; i--) {
-            sum += ((int)(s.charAt(i)) - 48) * pow;
+            sum += ((int) (s.charAt(i)) - ZERO) * pow;
             pow *= 2;
         }
         return sum + "";
@@ -44,7 +46,7 @@ public class Solution {
      *
      * @param      args  command line argument
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         sc.nextLine();
