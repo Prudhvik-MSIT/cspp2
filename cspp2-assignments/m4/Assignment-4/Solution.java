@@ -2,7 +2,8 @@
  * Date: 30-09-2018
  * Author: Prudhvik
  * Module 4 - Assignment 2
- * Given an String, Write a java method that returns the decimal value for the given binary string.
+ * Given an String, Write a java method that returns the decimal value
+ * for the given binary string.
  */
 
 import java.util.Scanner;
@@ -10,7 +11,7 @@ import java.util.Scanner;
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
     /**
      * Constructs the object.
      */
