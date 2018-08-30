@@ -20,7 +20,10 @@ public final class Solution {
         // empty constructor
     }
 
-    static char ZERO = '0';
+    /**
+     * zero
+     */
+    private static char ZERO = '0';
 
     /**
      * to convert from binary to decimal.
