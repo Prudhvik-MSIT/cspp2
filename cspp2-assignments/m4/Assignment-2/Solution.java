@@ -53,13 +53,16 @@ public class Solution {
         }
 
         if (r1 == r2 && c1 == c2) {
+            String res = "";
             int[][] m = new int[r1][c1];
             for (int i = 0; i < r1; i++) {
                 for (int j = 0; j < c1; j++) {
                     m[i][j] = m1[i][j] + m2[i][j];
-                    System.out.print(m[i][j] + " ");
-                } System.out.println("");
+                    res += m[i][j] + " ";
+                }
+                res = res.trim() + "\n";
             }
+            System.out.print(res);
         } else {
             System.out.println("not possible");
         }
