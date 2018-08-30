@@ -21,11 +21,6 @@ public final class Solution {
     }
 
     /**
-     * zero
-     */
-    private static char ZERO = '0';
-
-    /**
      * to convert from binary to decimal.
      *
      * @param      s     the binary number
@@ -35,7 +30,7 @@ public final class Solution {
     static String binaryToDecimal(final String s) {
         long sum = 0, pow = 1;
         for (int i = s.length() - 1; i >= 0; i--) {
-            sum += ((int) (s.charAt(i)) - ZERO) * pow;
+            sum += ((int) (s.charAt(i)) - '0') * pow;
             pow *= 2;
         }
         return sum + "";
