@@ -29,8 +29,8 @@ public class Solution {
      */
     static String binaryToDecimal(String s) {
         long sum = 0, pow = 1;
-        for (int i = 0; i < s.length(); i++) {
-            sum += ((int)(s.charAt(i))-48) * pow;
+        for (int i = s.length() - 1; i >= 0; i--) {
+            sum += ((int)(s.charAt(i)) - 48) * pow;
             pow *= 2;
         }
         return sum + "";
